@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sneaker Store</title>
+
+    <style> 
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{ 
+        background:#ffffff;
+        color:#ebebeb;
+    }
+
+    header{
+        background:#73acee;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1{
+        width:90%;
+        max-width: 1200px;
+        margin: 300x auto;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap: 20px;
+    }
+
+    .card{
+        background: rgb(104, 178, 247);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover{
+        transform: translateY(-5px);
+    }
+
+    .card img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .info{
+        padding: 15px;
+    }
+
+    .info h2{
+        margin-bottom: 10px;
+    }
+
+    .marca{
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .preco{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: green;
+        margin-bottom: 10px;
+    }
+
+    .cores,
+    .tamanhos{
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    .promo{
+        display: inline-block;
+        background: red;
+        color: rgb(255, 255, 255);
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+
+    footer{
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        color: rgb(192, 46, 46);
+        margin-top: 40px;
+    }
+
+    @media(max-width:600px){
+        header h1{
+            font-size: 1.5rem;
+        }
+    }
+    </style>
+
+    </head>
+
+<body>
+
+<header>
+    <h1>Sneaker Store</h1>
+    <p>E-commerce de tenis</p>
+
+</header>
+
+<div class="container">
+
+    <div class="grid" id="produtos"></div>
+
+</div>
+
+<footer>
+
+    Projeto AWS
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
